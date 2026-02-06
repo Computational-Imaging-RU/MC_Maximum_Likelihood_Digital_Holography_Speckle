@@ -1,4 +1,4 @@
-# MC_Maximum_Likelihood_Digital_Holography_Speckle
+# Monte Carlo Maximum Likelihood Reconstruction for Digital Holography with Speckle
 
 ## Preview
 #### There are 5 python files in this repo. The test data is under the /data/ folder.
