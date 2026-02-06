@@ -1,7 +1,7 @@
 # Monte Carlo Maximum Likelihood Reconstruction for Digital Holography with Speckle
 
 ## Preview
-#### There are 5 python files in this repo. The test data is under the /data/ folder.
+#### There are 5 python files in this repo.
 
 - train_PGD_MC_complex.py: training PGD-MC algorithm for recovering speckle-free real-valued reflectivity image from complex-valued holographic measurements with speckle.
 
@@ -13,15 +13,13 @@
 
 - utils.py: all the other helper functions.
 
+/data/: test images for evaluation.
+
+/checkpoints_dncnn_origin/: model checkpoints of pre-trained DnCNN with different noise levels.
+
 ## Run the simulation
 
 #### Run the PGD-MC algorithm (efficient Monte-Carlo and conjugate gradient methods) for recovering images from holographic measurements with speckle:
-
-```
-python train_PGD_MC_complex.py
-```
-
-#### Specify the hyperparameters and experiment setting:
 
 #### E.g., recover images from measurements with number of looks L=1, circular aperture radius ratio=1.0, additive noise level=25, Monte-Carlo samples=10, denoiser=DIP:
 
