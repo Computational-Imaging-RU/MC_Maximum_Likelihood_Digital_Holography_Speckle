@@ -1,4 +1,4 @@
-# Monte Carlo Maximum Likelihood Reconstruction for Digital Holography with Speckle
+# Monte Carlo Maximum Likelihood Reconstruction for Digital Holography with Speckle [pdf](https://arxiv.org/pdf/2602.10344)
 
 ## Preview
 #### There are 5 python files in this repo.
