@@ -1,13 +1,18 @@
 # Monte Carlo Maximum Likelihood Reconstruction for Digital Holography with Speckle
 
 ## Preview
-#### There are 5 python files in this repo.
+
+#### There are 7 python files in this repo.
 
 - train_PGD_MC_complex.py: training PGD-MC algorithm for recovering speckle-free real-valued reflectivity image from complex-valued holographic measurements with speckle.
 
 - PGD_MC_complex.py: implementation of Monte-Carlo sampling and conjugate gradient methods for matrix-free maximum likelihood based reconstruction for digital holography.
 
-- decoder.py: basic network structures of the Deep Decoder we use for projection.
+- train_PGD_MC_complex.py: training CPnP-EM algorithm [9] for recovering speckle-free real-valued reflectivity image from complex-valued holographic measurements with speckle.
+
+- PGD_MC_complex.py: implementation of EM algorithm and Multi-Agent Consensus Equilibrium (MACE) framework [9].
+
+- decoder.py: basic network structures of the Deep Decoder we use for projection / denoising.
 
 - train_DnCNN_origin.py: train DnCNN denoiser as prior model.
 
@@ -44,3 +49,5 @@ python train_PGD_MC_complex.py --dataset 'peppers' --mask_rate 1.0 --num_look 1 
 [7] Chen, Xi, Zhewen Hou, Christopher Metzler, Arian Maleki, and Shirin Jalali. "Multilook compressive sensing in the presence of speckle noise." In NeurIPS 2023 Workshop on Deep Learning and Inverse Problems. 2023. [paper](https://openreview.net/forum?id=G8wMnihF6E)
 
 [8] Zhou, Wenda, Shirin Jalali, and Arian Maleki. "Compressed sensing in the presence of speckle noise." IEEE Transactions on Information Theory 68.10 (2022): 6964-6980. [paper](https://ieeexplore.ieee.org/abstract/document/9783054)
+
+[9] Pellizzari, Casey J., Mark F. Spencer, and Charles A. Bouman. "Coherent plug-and-play: digital holographic imaging through atmospheric turbulence using model-based iterative reconstruction and convolutional neural networks." IEEE Transactions on Computational Imaging 6 (2020): 1607-1621. [paper](https://ieeexplore.ieee.org/abstract/document/9285202)
